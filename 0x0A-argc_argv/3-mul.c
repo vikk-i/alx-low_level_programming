@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
-  * _atoi - Converts a string to an integer
-  * @s: the string to be converted
-  *
-  * Return: the int converted from the string
-  */
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
+ *
+ * Return: the int converted from the string
+ */
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
@@ -34,8 +34,8 @@ int _atoi(char *s)
 			n = n * 10 + digit;
 			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
-					break;
-				f = 0;
+				break;
+			f = 0;
 		}
 		i++;
 	}
@@ -47,12 +47,12 @@ int _atoi(char *s)
 }
 
 /**
-  * main - Multiplies two numbers
-  * @argc: number of arguments
-  * @argv: array of arguments
-  *
-  * Return: 0 (Success), 1 (Error)
-  */
+ * main - multiplies two numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: 0 (Success), 1 (Error)
+ */
 int main(int argc, char *argv[])
 {
 	int result, num1, num2;
